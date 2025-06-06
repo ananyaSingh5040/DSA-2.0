@@ -5,10 +5,11 @@ int getMin(int arr[], int size)
     int mini = INT_MAX;
     for(int i =0; i<size;i++)
     {
-        if(mini>arr[i])
-        {
-            mini = arr[i];
-        }
+        mini = min(mini,arr[i]);
+        // if(mini>arr[i])
+        // {
+        //     mini = arr[i];
+        // }
     }
     return mini;
 }
@@ -17,10 +18,11 @@ int getMax(int arr[], int size)
     int maxi = INT_MIN;
     for(int i =0; i<size;i++)
     {
-        if(maxi<arr[i])
-        {
-            maxi = arr[i];
-        }
+         maxi = max(maxi, arr[i]);
+        // if(maxi<arr[i])
+        // {
+        //     maxi = arr[i];
+        // }
     }
     return maxi;
 }
