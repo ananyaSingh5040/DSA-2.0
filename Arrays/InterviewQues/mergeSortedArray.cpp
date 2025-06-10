@@ -5,7 +5,7 @@ using namespace std;
         vector<int> arr;
         int f = 0;
         int s = 0;
-        // int count =
+        // int count 
         while (f < m && s < n) {
             if (nums1[f] < nums2[s]) {
                 arr.push_back(nums1[f]);
