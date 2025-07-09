@@ -30,7 +30,30 @@ Node* buildTree()
 }
 void levelOrderTraversal(Node* root)
 {
-    
+    queue<Node*> q;
+    q.push(root);
+    q.push(NULL); //separator for level 0
+
+    while(!q.empty())
+    {
+        Node* temp = q.front();
+        if(temp == NULL)
+        {
+            cout<<endl;
+            if(!q.empty()) //child bache huve hai
+            {
+                q.push(NULL);
+            }
+        }
+        else
+        {
+            cout<<temp->data<<" ";
+            if(temp->left)
+            q.push(temp->left);
+            if(temp->right)
+            q.push(temp->right);
+        }
+    }
 }
 int main()
 {
@@ -38,6 +61,7 @@ int main()
     Node* root = NULL;
     root = buildTree();
     cout<<"Tree built succesfully!"<<endl;
+    levelOrderTraversal(root);
 
     return 0;
 }
