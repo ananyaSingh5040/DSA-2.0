@@ -22,9 +22,9 @@ Node* buildTree()
         return NULL;
     }
     Node* root = new Node(data);
-    cout<<"Enter left node data: "<<endl;
+    // cout<<"Enter left node data: "<<endl;
     root->left = buildTree();
-    cout<<"Enter right node data: "<<endl;
+    // cout<<"Enter right node data: "<<endl;
     root->right = buildTree();
     return root;
 }
