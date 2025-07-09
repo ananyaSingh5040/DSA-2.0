@@ -37,6 +37,7 @@ void levelOrderTraversal(Node* root)
     while(!q.empty())
     {
         Node* temp = q.front();
+        q.pop();
         if(temp == NULL)
         {
             cout<<endl;
@@ -65,3 +66,4 @@ int main()
 
     return 0;
 }
+// 1 3 7 -1 -1 11 -1 -1 5 17 -1 -1 -1 
