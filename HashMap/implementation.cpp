@@ -14,6 +14,8 @@ int main()
     cout<<mpp.size()<<endl;
     cout<<mpp.count("love")<<endl;
     cout<<mpp.at("babbar")<<endl;
+    // Will throw an error if babbar is not present as a key.
+    // Whereas mpp["mera"] would create one.
 
     return 0;
 }
