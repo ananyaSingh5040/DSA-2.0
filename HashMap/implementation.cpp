@@ -11,5 +11,9 @@ int main()
     mpp.insert(b);
     mpp["mera"] = 6;
 
+    cout<<mpp.size()<<endl;
+    cout<<mpp.count("love")<<endl;
+    cout<<mpp.at("babbar")<<endl;
+
     return 0;
 }
