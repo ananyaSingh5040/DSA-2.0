@@ -9,6 +9,7 @@ int main()
     mpp.insert(a);
     pair<string, int> b ("babbar",3);
     mpp.insert(b);
+    mpp["mera"] = 6;
 
     return 0;
 }
